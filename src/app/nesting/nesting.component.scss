@@ -1,0 +1,12 @@
+$list-color : #4A235A;
+
+.cardBody{ 
+    background-color: #85929E;
+    ul{
+        list-style: none; 
+        li{
+            color : $list-color;
+            margin-left: 0.4rem;
+        }
+    }
+}

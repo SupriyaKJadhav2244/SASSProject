@@ -1,0 +1,36 @@
+$ulList-color :red;
+$olList-color :green;
+$hover-color: purple;
+@mixin commonColor($pro1,$pro2){ 
+  text-decoration: $pro2;  
+  list-style: $pro1;
+}
+
+.cardBody{
+  ul{ 
+      li{
+          color: $ulList-color; 
+        //   list-style: square;
+          @include commonColor(square,none);
+      }
+      li:hover{
+        color: $hover-color;
+        // list-style: square;
+        @include commonColor(square,underline);
+    }
+  }
+
+  ol{ 
+      li{
+          color:$olList-color;
+        //   list-style:upper-roman;
+          @include commonColor(upper-roman,none);
+          &:hover{
+            color: $hover-color;
+            // list-style:upper-roman;
+            @include commonColor(upper-roman,underline);
+         }
+       }
+       
+  }
+}

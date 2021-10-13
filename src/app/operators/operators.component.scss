@@ -1,0 +1,9 @@
+ $v : .5rem;
+ .cardBody{ 
+    p{
+        font-size: $v + $v;
+    }
+    h5{
+        font-size: 1rem + 1rem;
+    }
+}

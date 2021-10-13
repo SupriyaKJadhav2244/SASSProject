@@ -1,0 +1,4 @@
+@mixin commonColor($pro1,$pro2){ 
+    text-decoration: $pro2;  
+    list-style: $pro1;
+  }

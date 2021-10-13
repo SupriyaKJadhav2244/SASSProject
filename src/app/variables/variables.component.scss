@@ -1,0 +1,17 @@
+$header : #CD5C5C;
+$cardbody : #000080;
+
+Strong{
+    color: $header;
+}
+
+.cardBody h5{
+    color: $cardbody;
+}
+
+.cardBody {
+    $pcolor : #0000FF;
+    p{ 
+        color: $pcolor;
+    }
+}
